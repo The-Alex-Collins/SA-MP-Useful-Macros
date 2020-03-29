@@ -40,6 +40,3 @@
 // function::%0<%1> { ... }
 #define function::%0<%1> \
 	forward %0(%1); public %0(%1)
-
-// printf("%d", Ternary(number, 1, "number is 1", "number isn't 1"));
-#define Ternary(%0,%1,%2,%3) ((%0 == %1) ? (%2) : (%3))
