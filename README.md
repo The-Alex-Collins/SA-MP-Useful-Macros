@@ -81,7 +81,6 @@ public OnPlayerConnect(playerid)
 }
 ```
 ---
----
 > Loop
 ```pawn
 main()
@@ -92,7 +91,6 @@ main()
   }
 }
 ```
----
 ---
 > FUNCTION
 ```pawn
@@ -107,8 +105,7 @@ FUNCTION::Test<int>
 }
 ```
 ---
----
-> FUNCTION
+> Ternary
 ```pawn
 main()
 {
