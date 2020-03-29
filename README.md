@@ -1,4 +1,4 @@
-# SA-MP-Useful-Macros
+# SA-MP-Useful-Macros (v1.0)
 ---
 > CONNECTED
 ```pawn
