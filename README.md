@@ -104,13 +104,3 @@ FUNCTION::Test<int>
 	return printf("%d", int);
 }
 ```
----
-> Ternary
-```pawn
-main()
-{
-  static something = 1;
-  printf("Something is %d", Ternary(something, 1, "1", "isn't 1"));
-}
-```
----
