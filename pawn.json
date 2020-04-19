@@ -1,0 +1,9 @@
+{
+	"user": "The-Alex-Collins",
+	"repo": "SA-MP-Useful-Macros",
+	"entry": "test.pwn",
+	"output": "test.amx",
+	"dependencies": [
+		"sampctl/samp-stdlib"
+	]
+}

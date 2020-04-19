@@ -37,6 +37,22 @@
 // Loop::i<20> { print("This message will be displayed 20 times."); }
 #define Loop::%0<%1> for(new %0 = 0; %0 < %1; ++%0)
 
-// function::%0<%1> { ... }
-#define function::%0<%1> \
+// Function::%0<%1> { ... }
+#define Function::%0<%1> \
 	forward %0(%1); public %0(%1)
+
+// Format::<%0>(%0, "%d", int);
+#define Format::(%0, \
+	format(%0, sizeof(%0),
+
+// if(Pressed(keys))
+#define Pressed(%0) \
+	((newkeys & %0) && !(oldkeys & %0))
+
+// Released(keys)
+#define Released(%0) \
+	((oldkeys & %0) && !(newkeys & %0))
+
+// Hold(Keys)
+#define Hold(%0) \
+	(newkeys & %0)

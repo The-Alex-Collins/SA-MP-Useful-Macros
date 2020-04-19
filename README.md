@@ -1,4 +1,21 @@
 # SA-MP-Useful-Macros (v1.0)
+[![sampctl](https://img.shields.io/badge/sampctl-SA--MP--Useful--Macros-2f2f2f.svg?style=for-the-badge)](https://github.com/The-Alex-Collins/SA-MP-Useful-Macros)
+
+## Installation
+
+Simply install to your project:
+
+```bash
+sampctl package install The-Alex-Collins/SA-MP-Useful-Macros
+```
+
+Include in your code and begin using the library:
+
+```pawn
+#include <u-macros>
+```
+
+## Usage
 ---
 > CONNECTED
 ```pawn
@@ -103,4 +120,27 @@ FUNCTION::Test<int>
 {
 	return printf("%d", int);
 }
+```
+---
+> FORMAT
+```pawn
+main()
+{
+  new string[20];
+  FORMAT::(string, "%d", int);
+  printf("%d", int);
+}
+```
+---
+## Testing
+
+<!--
+Depending on whether your package is tested via in-game "demo tests" or
+y_testing unit-tests, you should indicate to readers what to expect below here.
+-->
+
+To test, simply run the package:
+
+```bash
+sampctl package run
 ```
